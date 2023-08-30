@@ -1,0 +1,2 @@
+# atalhos
+atalhoscdt
