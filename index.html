@@ -95,6 +95,34 @@
             margin: 0 auto; /* Centralizar horizontalmente */
             text-align: center; /* Centralizar o rótulo horizontalmente */
         }
+
+        /* Estilos para telas menores (max-width: 768px) */
+        @media (max-width: 768px) {
+            .toggle-button {
+                top: 20px; /* Ajuste a posição vertical para telas menores */
+                right: 20px; /* Ajuste a posição horizontal para telas menores */
+            }
+        
+            .category-label {
+                font-size: 20px; /* Reduza o tamanho do rótulo da categoria para telas menores */
+                text-align: left; /* Alinhe o rótulo à esquerda para telas menores */
+            }
+        
+            .category {
+                flex-direction: column; /* Altere a direção do flexbox para empilhar os cards verticalmente */
+                align-items: center; /* Centralize os cards horizontalmente */
+            }
+        
+            .category .card {
+                width: 100%; /* Defina a largura dos cards para ocupar 100% da largura da tela */
+                margin: 10px 0; /* Adicione espaço superior e inferior aos cards */
+            }
+        
+            .category .card h2 {
+                font-size: 16px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -102,8 +130,8 @@
     <button id="dark-mode-toggle" class="toggle-button">🌞</button>
 
     <h3 class="category-label">Deploys</h3>
-    <div onclick="window.open('http://ser.cdt.com.br/', '_blank')" class="category" id="category2">
-        <div class="card">
+    <div class="category" id="category2">
+        <div onclick="window.open('http://ser.cdt.com.br/', '_blank')" class="card">
             <img src="https://www.cloudia.com.br/wp-content/uploads/serodonto.png" alt="Imagem 3">
             <h2>Viewer Serodonto</h2>
             <button >Abrir</button>
