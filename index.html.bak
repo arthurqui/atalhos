@@ -290,7 +290,7 @@
 	
 	comandos git:
 	<br>
-	git pull origin developer
+	Pegar mudanças da developer: git pull origin developer
 
 </body>
 </html>
