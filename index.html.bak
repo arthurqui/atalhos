@@ -149,12 +149,6 @@
             <button >Abrir</button>
         </div>
 		
-		<div onclick="window.open('http://backend-b2l-homolog.azurewebsites.net/swagger/index.html', '_blank')" class="card">
-            <img src="https://www.alura.com.br/assets/api/cursos/512/swagger-documentando-apis.png" alt="Imagem 3">
-            <h2>Swagger B2L</h2>
-            <button >Abrir</button>
-        </div>
-		
 		
     </div>
 
