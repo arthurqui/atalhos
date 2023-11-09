@@ -143,7 +143,7 @@
             <button >Abrir</button>
         </div>
 		
-		<div onclick="window.open('https://temporarydeploycdt.netlify.app', '_blank')" class="card">
+		<div onclick="window.open('https://frontend-b2l-homolog.azurewebsites.net/', '_blank')" class="card">
             <img src="https://base2launch.com.br/wp-content/uploads/2022/01/cropped-cropped-icon02.png" alt="Imagem 3">
             <h2>Base2Launch</h2>
             <button >Abrir</button>
@@ -152,6 +152,12 @@
 		<div onclick="window.open('http://backend-b2l-homolog.azurewebsites.net/swagger/index.html', '_blank')" class="card">
             <img src="https://www.alura.com.br/assets/api/cursos/512/swagger-documentando-apis.png" alt="Imagem 3">
             <h2>Swagger B2L</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('http://arthur.cdt.com.br', '_blank')" class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/8024/8024338.png" alt="Imagem 3">
+            <h2>Cadastros Academy</h2>
             <button >Abrir</button>
         </div>
 		
@@ -303,6 +309,15 @@
 	comandos git:
 	<br>
 	Pegar mudanças da developer: git pull origin developer
+	<br><br>
+	Comandos pg:
+	<br>
+	Select * From "Courses"
+	<br>
+	Delete from public."Courses" Where "Id" = 26
+	<br>
+	<br>
+	<br>
 
 </body>
 </html>
