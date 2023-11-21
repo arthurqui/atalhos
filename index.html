@@ -193,6 +193,12 @@
             <button >Abrir</button>
         </div>
 		
+		<div onclick="window.open('https://dev.azure.com/cdtsoftware/CRM/_sprints/taskboard/CRM%20Team/CRM/Sprint%201', '_blank')" class="card">
+            <img src="https://dev.azure.com/cdtsoftware/_apis/GraphProfile/MemberAvatars/5540db7d-874d-4613-b3ef-f43537878aa7?overrideDisplayName=CRM&size=2" alt="Imagem 3">
+            <h2>CRM</h2>
+            <button >Abrir</button>
+        </div>
+		
 		
     </div>
 
@@ -219,6 +225,12 @@
 		<div onclick="window.open('https://dev.azure.com/cdtsoftware/_git/B2L%20-%20Back-End/pullrequests?_a=active', '_blank')" class="card">
             <img src="https://media.discordapp.net/attachments/404322104172085273/1146599920778891375/emptyPRList.e7LLYc.png" alt="Imagem 3">
             <h2>B2L Back</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://dev.azure.com/cdtsoftware/_git/CRM/pullrequests?_a=mine', '_blank')" class="card">
+            <img src="https://media.discordapp.net/attachments/404322104172085273/1146599920778891375/emptyPRList.e7LLYc.png" alt="Imagem 3">
+            <h2>CRM</h2>
             <button >Abrir</button>
         </div>
 		
@@ -257,17 +269,18 @@
             <button >Abrir</button>
         </div>
 		
+		<div onclick="window.open('https://www.figma.com/file/TWY83CEa4cl9k9DSxpqWGQ/CRM---Serodonto?type=design&node-id=0-1&mode=design&t=wuhNkdZOXOeo1dVK-0', '_blank')" class="card">
+            <img src="https://joaoflopes-dev-ed.file.force.com/servlet/servlet.ImageServer?id=0154w000024UeHF&oid=00DA0000000ZZ89&lastMod=1686171963000" alt="Imagem 3">
+            <h2>CRM</h2>
+            <button >Abrir</button>
+        </div>
+		
 		<div onclick="window.open('https://www.figma.com/file/VB8RuAuUkxSoCsr0dnM9qV/FLUXO---Serodonto?type=design&node-id=0-1&mode=design&t=2GakyecoOZzkJat2-0', '_blank')" class="card">
             <img src="https://media.discordapp.net/attachments/1157028009031774400/1172234491423633428/image-removebg-preview.png?ex=655f9371&is=654d1e71&hm=b439d6de0429413ffef3712af50fa0532f1023f2d7f472df18e6b6f4a089b413&=&width=625&height=625" alt="Imagem 3">
             <h2>Fluxo Serodonto</h2>
             <button >Abrir</button>
         </div>
 		
-		<div onclick="window.open('https://www.figma.com/file/TWY83CEa4cl9k9DSxpqWGQ/CRM---Serodonto?type=design&node-id=0-1&mode=design&t=wuhNkdZOXOeo1dVK-0', '_blank')" class="card">
-            <img src="https://joaoflopes-dev-ed.file.force.com/servlet/servlet.ImageServer?id=0154w000024UeHF&oid=00DA0000000ZZ89&lastMod=1686171963000" alt="Imagem 3">
-            <h2>CRM</h2>
-            <button >Abrir</button>
-        </div>
 
         <div onclick="window.open('https://www.figma.com/file/Oswst8Q0GzU6606TbBQEwm/APP---Serodonto?node-id=246%3A13928&mode=dev', '_blank')" class="card">
             <img src="https://yt3.googleusercontent.com/ytc/AGIKgqN4WAloWO3DyhdOBYyK-SSKsThHXqatMxaX7x06=s900-c-k-c0x00ffffff-no-rj" alt="Imagem 3">
@@ -276,6 +289,9 @@
         </div>
 		
     </div>
+	
+
+
 	
 	
 
@@ -310,20 +326,37 @@
     });
 </script>
 
+<script>
+    // Função para alternar a visibilidade do bloco de comandos
+    function toggleCommands() {
+        console.log('Botão pressionado');
+        var commandsBlock = document.getElementById('commands-block');
+        commandsBlock.style.display = (commandsBlock.style.display === 'none' || commandsBlock.style.display === '') ? 'block' : 'none';
+    }
+</script>
 
+
+
+</div>
+<button onclick="toggleCommands()">Comandos</button>
+<div id="commands-block" style="display: none;">
+    <p>
+        comandos git:
+        <br>
+        Pegar mudanças da developer: git pull origin developer
+        <br><br>
+        Comandos pg:
+        <br>
+        Select * From "Courses"
+        <br>
+        Delete from public."Courses" Where "Id" = 26
+        <br>
+        <br>
+        <br>
+    </p>
+</div>
 	
-	comandos git:
-	<br>
-	Pegar mudanças da developer: git pull origin developer
-	<br><br>
-	Comandos pg:
-	<br>
-	Select * From "Courses"
-	<br>
-	Delete from public."Courses" Where "Id" = 26
-	<br>
-	<br>
-	<br>
+	
 
 </body>
 </html>
